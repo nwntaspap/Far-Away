@@ -171,6 +171,26 @@ input[type="checkbox"] {
   transform: translateY(2px);
 }
 
+.item-text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.item-quantity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  padding: 0 0.6rem;
+  border-radius: 10rem;
+  background-color: #e5771f;
+  color: #ffebb3;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .stats {
   background-color: #76c7ad;
   text-align: center;
