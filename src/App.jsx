@@ -23,6 +23,9 @@ function App() {
     setItems((items) => items.filter((item) => id !== item.id));
   };
 
+  // Derived state
+  const packedItems = items.filter((item) => item.packed);
+
   return (
     <div className="app">
       <Logo />
@@ -32,7 +35,7 @@ function App() {
         toggleItem={handleToggleItem}
         deleteItem={handleDeleteItem}
       />
-      <Stats />
+      <Stats items={items} packedItems={packedItems} />
     </div>
   );
 }
