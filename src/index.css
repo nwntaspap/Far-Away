@@ -64,6 +64,10 @@ input {
   cursor: pointer;
 }
 
+.delete-item {
+  color: rgb(255, 30, 30);
+}
+
 .add-form button {
   text-transform: uppercase;
   background-color: #76c7ad;
@@ -127,5 +131,6 @@ input[type="checkbox"] {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
+  font-style: italic;
   padding: 3.2rem 0;
 }
