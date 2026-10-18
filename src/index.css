@@ -66,15 +66,27 @@ input {
 
 .delete-item {
   color: rgb(255, 30, 30);
+  transition: all 0.3s ease-out;
+}
+
+.delete-item:hover {
+  transform: rotate(90deg);
 }
 
 .add-form button {
   text-transform: uppercase;
   background-color: #76c7ad;
+  transition: all 0.3s ease-out;
+}
+
+.add-form button:hover {
+  transform: scale(1.05);
+  color: #7c553b;
+  background-color: #35dda8;
 }
 
 .list {
-  background-color: #5a3e2b;
+  background-color: #5f4635;
   color: #ffebb3;
   padding: 4rem 0;
 
@@ -97,7 +109,7 @@ input {
 .list ul {
   list-style: none;
   width: 80%;
-  overflow: scroll;
+  /* overflow: scroll; */
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,9 +125,41 @@ input {
 }
 
 input[type="checkbox"] {
-  height: 2rem;
-  width: 2rem;
-  accent-color: #e5771f;
+  display: none;
+}
+
+.checkmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid #ffebb3;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.2s ease-out;
+  margin-top: 3px; /* to fix the height difference with the text */
+}
+
+.checkmark::after {
+  content: "✔";
+  font-size: 1.4rem;
+  color: transparent; /* when unchecked */
+  transition: color 0.2s ease-out;
+}
+
+.checkbox:hover .checkmark {
+  border-color: #e5771f;
+}
+
+.checkbox input:checked + .checkmark {
+  background-color: #e5771f;
+  border-color: #e5771f;
+}
+
+.checkbox input:checked + .checkmark::after {
+  color: #ffebb3; /* when checked */
 }
 
 .list li button {
