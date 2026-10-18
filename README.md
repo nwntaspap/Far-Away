@@ -1,18 +1,95 @@
-# React + Vite
+# 🧳 Far Away — Packing List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A packing list application built with **React** and **Vite**, inspired by the Far Away project from Jonas Schmedtmann's React course.
 
-Currently, two official plugins are available:
+<p align="center">
+  <img
+    src="public/assets/Far-Away.png"
+    alt="Far Away application preview"
+    width="800"
+  />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The goal was not just to follow the course, but to build my own version of the application, experiment with React fundamentals, and add personal touches to the UI and user experience.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Add items** — Add items to your packing list with a custom quantity.
+- **Toggle packed status** — Mark items as packed or unmark them.
+- **Delete items** — Remove individual items from the list.
+- **Live statistics** — Track the total number of items, packed items, and packing progress.
+- **Custom UI and animations** — Personalized styling, hover effects, and transitions for a more interactive experience.
+- **Unique item IDs** — Generate unique identifiers with `crypto.randomUUID()`.
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/) — UI components and state management.
+- [Vite](https://vite.dev/) — Development server and production build.
+- JavaScript (ES6+)
+- CSS3 — Custom styling, transitions, and animations.
+- HTML5
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nwntaspap/Far-Away.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Far-Away
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## 📜 Available Scripts
+
+| Command                | Description                               |
+| ---------------------- | ----------------------------------------- |
+| `npm run dev`          | Start the development server              |
+| `npm run build`        | Build the application for production      |
+| `npm run preview`      | Preview the production build              |
+| `npm run lint`         | Check the code with ESLint                |
+| `npm run lint:fix`     | Automatically fix supported ESLint issues |
+| `npm run format`       | Format files with Prettier                |
+| `npm run format:check` | Check code formatting                     |
+
+## 📚 What I Practiced
+
+- Building reusable React components.
+- Passing data and callback functions through props.
+- Managing state with `useState`.
+- Updating arrays immutably.
+- Handling form submissions and user interactions.
+- Working with controlled inputs.
+- Deriving statistics from existing state.
+- Organizing a React project with Vite.
+- Customizing the user interface with CSS.
+
+## 🎯 Purpose
+
+This project is part of my journey toward becoming a frontend developer. It is an opportunity to practice React fundamentals, experiment with UI design, and extend a course project with my own ideas.
+
+---
