@@ -23,6 +23,10 @@ function App() {
     setItems((items) => items.filter((item) => id !== item.id));
   };
 
+  const handleResetItems = () => {
+    setItems([]);
+  };
+
   // Derived state
   const packedItems = items.filter((item) => item.packed);
 
@@ -34,6 +38,7 @@ function App() {
         items={items}
         toggleItem={handleToggleItem}
         deleteItem={handleDeleteItem}
+        resetItems={handleResetItems}
       />
       <Stats items={items} packedItems={packedItems} />
     </div>

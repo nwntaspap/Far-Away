@@ -76,6 +76,7 @@ input {
 .add-form button {
   text-transform: uppercase;
   background-color: #76c7ad;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-out;
 }
 
@@ -83,6 +84,7 @@ input {
   transform: scale(1.05);
   color: #7c553b;
   background-color: #35dda8;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .list {
@@ -104,6 +106,18 @@ input {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0 0.8rem;
+}
+
+.actions button.reset-list {
+  background-color: #f4a226;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.actions button.reset-list:hover {
+  background-color: #d18d26;
+  color: #ffebb3;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .list ul {
