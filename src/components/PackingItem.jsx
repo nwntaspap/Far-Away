@@ -8,14 +8,16 @@ function PackingItem({ item, toggleItem, deleteItem }) {
           onChange={() => toggleItem(item.id)}
         />
         <span className="checkmark"></span>
+
+        <span
+          className="item-text"
+          style={item.packed ? { textDecoration: "line-through" } : {}}
+        >
+          {item.text}
+          <span className="item-quantity">{item.quantity}</span>
+        </span>
       </label>
-      <span
-        className="item-text"
-        style={item.packed ? { textDecoration: "line-through" } : {}}
-      >
-        {item.text}
-        <span className="item-quantity">{item.quantity}</span>
-      </span>
+
       <button className="delete-item" onClick={() => deleteItem(item.id)}>
         🗙
       </button>
